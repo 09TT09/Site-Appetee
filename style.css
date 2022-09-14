@@ -1,0 +1,1719 @@
+/*________________________________________________________Code_Global________________________________________________________*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: "parisine-std", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
+}
+
+p {
+    font-family: "MontSerrat", sans-serif, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*________________________________________________________Partie_1________________________________________________________*/
+
+/* ------------------------------------ HEADER ------------------------------------ */
+
+.div_logo_appetee_mobile {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: none;
+}
+
+.logo_appetee_mobile {
+    margin: auto;
+    margin-top: 100px;
+    width: 80px;
+    height: auto;
+}
+
+#navbutton {
+    height: 60px;
+    width: auto;
+    margin: 15px 0 0 15px;
+    display: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#navbutton:hover{
+    transform: scale(1.2,1.2);
+}
+
+#nav{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    z-index: 10;
+    background-color: rgba(250,250,250,0.6);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0 2px 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 50px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.3;
+    transition: 0.25s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1,1.1);
+}
+
+nav ul li a:hover {
+    transition: 0.1s;
+    color: #94c942;
+}
+
+#nav img {
+    width: 80px;
+    height: auto;
+}
+
+header {
+    position: relative;
+    padding-bottom: 300px;
+    overflow: hidden;
+}
+
+header #headerBg {
+    position: absolute;
+    top: -2px;
+    right: -50px;
+    z-index: -1;
+    width: 890px;
+    height: auto;
+}
+
+header #frite {
+    position: absolute;
+    left: 90px;
+    bottom: -250px;
+    height: 300px;
+}
+
+.home {
+    display: flex;
+    margin-top: 150px;
+    position: relative;
+}
+
+.home article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home article div {
+    width: 70%;
+}
+
+.home article h1 {
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 1.3;
+    position: relative;
+    color: #db3427;
+}
+
+.home article h1 hr {
+    transform: rotate(90deg);
+    width: 250px;
+    height: 3px;
+    background-color: #db3427;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 90px;
+    left: -150px;
+}
+
+.home article h1::after {
+    content: 'Des recettes selon vos envies';
+    color: black;
+}
+
+.home article p {
+    max-width: 70%;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 1.22;
+    margin: 50px 0;
+}
+
+.home article div div {
+    display: flex;
+}
+
+.home article div div img {
+    width: 180px;
+    height: auto;
+    margin: 0 10px 0 0;
+    transition: 0.25s;
+}
+
+.home article div div img:hover {
+   transform: scale(1.1,1.1);
+}
+
+.home article:nth-child(2) img {
+    height: 100vh;
+    max-height: 750px;
+    width: auto;
+}
+
+.overlay {  
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 20;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: crimson;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  .phone_download_div{
+    display: none;
+  }
+
+/* ------------------------------------ NOTRE CONCEPT ------------------------------------ */
+.concept h2 {
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1.28;
+    text-align: center;
+}
+
+.concept h2::after {
+    content: ' concept';
+    color: #db3427;
+}
+
+.concept article .etape {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.concept article .etape .contener {
+    width: 20%;
+}
+
+.concept article .etape div h3 {
+    text-align: center;
+    text-decoration: 3px #db3427 underline;
+    text-underline-position: under;
+}
+
+.concept h4,
+.concept p {
+    text-align: center;
+    max-width: 85%;
+    margin: 20px auto;
+}
+
+.contener div {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 80px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-top: 40px;
+    min-height: 400px;
+    position: relative;
+}
+
+.contener div img {
+    width: 100%;
+    height: auto;
+}
+
+.contener div .contenerBg {
+    position: absolute;
+    z-index: -1;
+    bottom: -90px;
+    left: -10%;
+    width: 120%;
+}
+
+.concept {
+    padding-bottom: 180px;
+}
+
+/* ------------------------------------ Notre projet ------------------------------------ */
+
+.projet h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.28;
+    margin-bottom: 0;
+}
+
+.projet h2::after {
+    content: ' projet';
+    color: #db3427;
+}
+
+.projet article {
+    width: 100%;
+    max-height: 1330px;
+    display: flex;
+    align-items: center;
+}
+
+.projet article section {
+    width: 50%;
+}
+
+.projet article section:nth-child(2) {
+    overflow: hidden;
+    z-index: -5;
+    margin-top: -50px;
+}
+
+.img_pizza {
+    width: 140%;
+    height: auto;
+}
+
+.projet article section h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.27;
+    color: #f7a224;
+    max-width: 80%;
+    margin: auto;
+}
+
+.projet .projetContener {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.projet .projetContener div:nth-child(1) {
+    width: 70%;
+}
+
+.projet .projetContener div:nth-child(2) {
+    width: 30%;
+}
+
+.projet .projetContener h3 {
+    text-align: right;
+    margin-right: 34px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.27;
+    color: #94c942;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.projet .projetContener p {
+    max-width: 65%;
+    margin: auto;
+    margin-right: 10px;
+
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 1.22;
+    color: #303030;
+
+}
+
+.decale {
+    margin-left: 100px;
+}
+
+.decale2 {
+    margin-left: 200px;
+}
+
+.projet {
+    position: relative;
+    overflow: hidden;
+}
+
+#projetBg {
+    position: absolute;
+    overflow: hidden;
+    top: 10px;
+    right: -100px;
+    width: 500px;
+    transform: rotate(15deg);
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#app img {
+    margin: 0 10px 0 0;
+    width: 180px;
+    height: auto;
+    transition: 0.25s;
+}
+
+#app img:hover {
+    transform: scale(1.1,1.1);
+}
+
+/* ------------------------------------ Tarifs ------------------------------------ */
+
+.tarifs {
+    background-color: #db3427;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.tarifs h2 {
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.28;
+}
+
+.tarifs p {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.tarifs section {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.tarifs section article {
+    background-color: #ecebeb;
+    color: black;
+    width: 20%;
+    padding: 50px 0 30px;
+    border-radius: 40px 40px 0 0;
+    margin: 0 3px;
+    position: relative;
+    transition: 0.25s;
+}
+
+.tarifs section article p {
+    color: #707070;
+}
+
+.tarifs section .select {
+    background-color: white;
+    margin-top: -20px;
+}
+
+.tarifs section .promo {
+    position: absolute;
+    top: -20px;
+    left: 25%;
+    width: 50%;
+    border-radius: 23px;
+    background-color: #428efa;
+    color: white;
+}
+
+.tarifs section .promo p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 1.22;
+    color: #ffffff;
+}
+
+#annuel, #trimestriel, #mensuel {
+    cursor: pointer;
+}
+
+.affichageTarifs {
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+}
+
+.affichageTarifs article {
+    background-color: #FFFFFF;
+    border-radius: 82px;
+    width: 20%;
+    padding: 60px;
+    position: relative;
+    height: 100%;
+    margin: 50px 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.affichageTarifs article h2 {
+    color: #db3427;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.29;
+}
+
+.affichageTarifs article h3 {
+    color: white;
+    text-align: center;
+    margin-top: -70px;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.29;
+    position: relative;
+    z-index: 2;
+}
+
+.affichageTarifs article:nth-child(2) div {
+    display: block;
+}
+
+.affichageTarifs article:nth-child(2) .flex {
+    display: flex;
+}
+
+.affichageTarifs article:nth-child(2) p {
+    color: white;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 200px;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.29;
+    position: relative;
+    z-index: 2;
+    font-family: parisine-std, sans-serif;
+}
+
+.affichageTarifs article:nth-child(2) p::after {
+    content: ' /mois';
+    font-size: 20px;
+}
+
+.affichageTarifs article p {
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 1.22;
+    color: #707070;
+    max-width: 78%;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.affichageTarifs article ul li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+
+.affichageTarifs article ul li img {
+    width: 8%;
+    height: auto;
+    padding: 10px 20px 10px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.affichageTarifs article a {
+    text-decoration: none;
+    color: #db3427;
+    border: 1px solid #db3427;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.affichageTarifs article a:hover {
+    transform: scale(1.05,1.05);
+}
+
+.affichageTarifs article div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gratuitBg {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 43%;
+}
+
+#premiumBg {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#redButton {
+    background-color: #db3427;
+    color: white;
+}
+
+/* ------------------------------------ RESPONSIVE ------------------------------------ */
+@media screen and (max-width: 1700px) {
+    .affichageTarifs article:nth-child(2) p {
+        font-size: 60px;
+        margin-bottom: 150px;
+    }
+
+    #annuel, #trimestriel, #mensuel {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+    .affichageTarifs article:nth-child(2) p {
+        font-size: 40px;
+        margin-bottom: 120px;
+    }
+    header #headerBg {
+        width: 60%;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .concept article .etape .contener {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .projet article section:nth-child(2) {
+        margin-top: -300px;
+    }
+
+    .img_pizza {
+        width: 180%;
+		height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    .affichageTarifs article:nth-child(2) p {
+        font-size: 30px;
+        margin-bottom: 100px;
+    }
+
+    .home article:nth-child(2) img {
+        height: 70vh;
+		width: auto;
+    }
+
+    header #frite {
+        display: none;
+    }
+
+    .concept article .etape .contener {
+        width: 26%;
+    }
+
+    .concept {
+        padding-bottom: 100px;
+    }
+
+    .concept h4, .concept p {
+        max-width: 100%;
+    }
+
+    .projet h2 {
+        margin-bottom: 40px;
+    }  
+
+    .home hr {
+        display: none;
+    }
+
+    #projetBg {
+        display: none;
+    }
+
+    #app {
+        flex-direction: row;
+    }
+
+    #app img {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .phone_download_div{
+        display: block;
+    }
+
+    .home article div div {
+        display: none;
+    }
+
+    .phone_download_img {
+        width: 180px !important;
+        height: auto !important;
+        margin: 50px 0px 30px 0;
+        transition: 0.25s;
+    }
+
+    .phone_download_img:hover {
+        transform: scale(1.1,1.1);
+    }
+
+    .div_logo_appetee_mobile {
+        display: block;
+    }
+    
+    .affichageTarifs {
+        display: block;
+    }
+
+    .affichageTarifs article {
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    .affichageTarifs article:nth-child(2) p {
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 200px;
+    }
+
+    #navbutton {
+        display: block;
+        position: fixed;
+        z-index: 3;
+    }
+    #nav {
+        display: none;
+    }
+    #headerBg {
+        display: none;
+    }
+
+    .projet .projetContener h3{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .home {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .home article {
+        width: 100%;
+    }
+
+    .home article h1,
+    .home article p {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .home article div {
+        width: 80%;
+        text-align: center;
+    }
+
+    .home article div div {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .concept article .etape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .concept article .etape .contener {
+        width: 67%;
+        margin-bottom: 150px;
+    }
+
+    .concept h4, .concept p {
+        max-width: 85%;
+    }
+
+    .decale,
+    .decale2 {
+        margin-left: 0;
+    }
+
+    .projet article section {
+        width: 90%;
+        margin: auto;
+    }
+
+    .projet .projetContener h3,
+    .projet .projetContener p {
+        text-align: center;
+        max-width: 90%;
+        margin: 10px auto 0;
+    }
+
+    .projet article section:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+    .tarifs section article p {
+        font-size: 14px;
+    }
+
+    #desc {
+        max-width: 80%;
+        margin: auto;
+    }
+    .affichageTarifs article:nth-child(2) p {
+        font-size: 50px;
+        margin-bottom: 150px;
+    }
+
+    .tarifs section .promo {
+        left: 7.5%;
+        width: 85%;
+    }
+
+    .tarifs section .promo p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .tarifs section article p {
+        font-size: 12px;
+    }
+
+    .affichageTarifs article:nth-child(2) p {
+        font-size: 35px;
+        margin-bottom: 100px;
+    }
+
+    .home article div {
+        width: 90%;
+    }
+
+    .home hr {
+        display: none;
+    }
+
+    .home article p {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    .home article div div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home article div div img {
+        margin: 10px 0;
+    }
+
+    header {
+        padding-bottom: 100px;
+    }
+
+    .contener div .contenerBg {
+        bottom: -50px;
+    }
+
+    .concept article .etape .contener {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+
+    .projet article {
+        max-height: none;
+    }
+
+    .projet .projetContener {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .projet .projetContener div:nth-child(2) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .tarifs_h3 {
+        font-size: 18px;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_cell_img img, .une_equipe_motivee_cell_img_2 img {
+        width: 250px !important;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .tarifs_h3 {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    #premiumBg {
+        display: none;
+    }
+
+    .affichageTarifs article h2, #price {
+        color: #db3427;
+        text-align: center;
+        margin: 10px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projet article section h3{
+        font-size: 20px;
+    }
+
+    .home article h1{
+        font-size: 40px;
+    }
+
+    .affichageTarifs article:nth-child(2) p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 472px){
+	.phone_download_img_2 {
+		margin: 0;
+	}
+}
+
+@media screen and (max-height: 760px){
+	header #frite {
+		height: 250px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*________________________________________________________Partie_2________________________________________________________*/
+
+/*_______________________________________________Section : telecharger appetee_______________________________________________*/
+
+.telecharger_appetee {
+    width: 100%;
+    height: 792px;
+    background-color: #F7A224;
+}
+
+.telecharger_appetee_main_title {
+    width: 100%;
+    height: 140px;
+}
+
+.telecharger_appetee_main_title h2 {
+    text-align: center;
+    margin: 0;
+    line-height: 140px;
+    font-size: 48px;
+}
+
+.telecharger_appetee_flexbox {
+    width: 100%;
+    height: calc( 792px - 240px );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tel_app_img {
+    width: 350px;
+    height: auto;
+    transition: 1s;
+}
+
+.tel_app_img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.blank_div {
+    height: 1px;
+    width: 10%;
+}
+
+.telecharger_appetee_div_text {
+    margin-bottom: 100px;
+    margin-left: 10%;
+    width: 40%;
+    min-width: 310px;
+}
+
+.telecharger_appetee_div_text h3 {
+    margin: 0;
+    color: white;
+    font-size: 42px;
+}
+
+.telecharger_appetee_div_text img {
+    margin: 5px;
+    margin-top: 40px;
+    width: 180px;
+    height: auto;
+    transition: 0.25s;
+}
+
+.telecharger_appetee_div_text img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.appli_submit {
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    margin: 30px 0px 20px 0px;
+    border: 0;
+    border-radius: 30px;
+    background-color: #94C942;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.appli_submit:hover {
+    transform: scale(1.1,1.1);
+}
+
+.appli_input {
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    border: 0;
+    border-radius: 30px;
+    padding: 0 5px;
+    margin: 0 5px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/*_______________________________________________Equipe_______________________________________________*/
+
+.une_equipe_motivee {
+    width: 100%;
+    height: auto;
+    background-color: #ececec;
+    background-image: url("img/fond_equipe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.une_equipe_motivee .une_equipe_motivee_titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+}
+
+.une_equipe_motivee .une_equipe_motivee_titre h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.une_equipe_motivee .une_equipe_motivee_titre span {
+    color: #DB3427;
+}
+
+.une_equipe_motivee h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.une_equipe_motivee .une_equipe_motivee_table {
+    display: table;
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+}
+
+.une_equipe_motivee .une_equipe_motivee_cell_img {
+    display: table-cell;
+    width: 40%;
+    height: auto;
+    text-align: right;
+}
+
+.une_equipe_motivee .une_equipe_motivee_cell_text {
+    display: table-cell;
+    width: 40%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.une_equipe_motivee .une_equipe_motivee_cell_img_2 {
+    display: table-cell;
+    width: 40%;
+    height: auto;
+}
+
+.une_equipe_motivee .une_equipe_motivee_cell_text_2 {
+    display: table-cell;
+    width: 40%;
+    height: auto;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.une_equipe_motivee .une_equipe_motivee_cell_img img, .une_equipe_motivee_cell_img_2 img {
+    width: 300px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.une_equipe_motivee .div_espace {
+    display: table-cell;
+    width: 10%;
+}
+
+.une_equipe_motivee .equipe_div_text_button {
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 30px;
+    background-color: #94C942;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.une_equipe_motivee .equipe_div_text_button:hover {
+    transform: scale(1.1,1.1);
+}
+
+.une_equipe_motivee .no_margin {
+    margin: 0;
+    padding-bottom: 70px;
+}
+
+/*_______________________________________________nous contacter_______________________________________________*/
+
+.nous_contacter {
+    display: table;
+    width: 100%;
+    height: auto;
+    background-color: #ececec;
+}
+
+.nous_contacter_table_cell {
+    display: table-cell;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nous_contacter_table_cell h2 {
+    color: #94C942;
+}
+
+.nous_contacter_table_cell p {
+    font-size: 28px;
+    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
+}
+
+.nous_contacter_table_cell_2 {
+    display: table-cell;
+    width: 60%;
+    height: 792px;
+    vertical-align: middle;
+}
+
+.div_formulaire {
+    width: 65%;
+    height: 90%;
+    margin: auto;
+    border-radius: 80px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.div_formulaire h3 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.div_formulaire_section {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.div_formulaire_label {
+    display: block;
+    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
+}
+
+.div_formulaire_label span {
+    color: #DB3427;
+}
+
+.div_formulaire_input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px 5px;
+    border: 0;
+    border-bottom: 2px solid #707070;
+    font-family: "MontSerrat", sans-serif, Arial, sans-serif;
+}
+
+.div_formulaire_input::placeholder {
+    color: #c5c5c5;
+}
+
+.div_formulaire_section_margin {
+    margin-top: 70px;
+}
+
+.center_button_submit_form {
+    margin: auto;
+    text-align: center;
+}
+
+.button_submit_form {
+    width: 150px;
+    height: 35px;
+    margin-top: 70px;
+    border: 0;
+    border-radius: 30px;
+    background-color: #94C942;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.button_submit_form:hover {
+    transform: scale(1.1,1.1);
+}
+
+/*_______________________________________________Footer_______________________________________________*/
+
+footer {
+    width: 100%;
+    background-color: #DB3427;
+    padding-bottom: 30px;
+}
+
+.footer_div_global_infos a {
+    text-decoration: none;
+}
+
+.footer_text_div h3 {
+    color: white;
+    padding-top: 50px;
+    margin: 0;
+    margin-bottom: 35px;
+    margin-left: 8%;
+}
+
+.footer_div_global_infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer_div_infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    min-width: 300px;
+    height: 150px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+.footer_div_infos:hover {
+    transform: scale(1.05,1.05);
+}
+
+.footer_div_infos img {
+    width: 100px;
+    height: auto;
+    padding: 20px;
+}
+
+.footer_div_infos p {
+    font-family: "Parisine STD", sans-serif, Arial, sans-serif;
+    margin: 0;
+    color: #000000;
+    font-size: 16px;
+}
+
+.footer_text2_div h3 {
+    padding-top: 20px;
+    margin-left: 8%;
+    color: white;
+}
+
+.footer_text2_div a {
+    padding-top: 20px;
+    margin-left: 12%;
+    font-family: "MontSerrat", sans-serif, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.footer_text2_div a:hover {
+   font-size: 18px;
+}
+
+.footer_div_infos_div_img {
+    width: 60%;
+    text-align: center;
+}
+
+.footer_div_infos_div_text {
+    width: 40%;
+}
+
+/*________________________________________________________________________________________*/
+
+@media screen and (max-width:1340px) {
+
+    .telecharger_appetee_div_text {
+        width: 50%;
+    }
+
+    .blank_div {
+        height: 0;
+        width: 0;
+    }
+
+}
+
+/*________________________________________________________________________________________*/
+
+@media screen and (max-width:1150px) {
+
+    .div_formulaire {
+        width: 90%;
+    }
+
+}
+
+/*________________________________________________________________________________________*/
+
+@media screen and (max-width:1000px) {
+
+    .telecharger_appetee {
+        height: auto;
+    }
+
+    .telecharger_appetee_main_title h2 {
+        text-align: center;
+        margin: 0;
+        line-height: 140px;
+    }
+
+    .telecharger_appetee_div_text h3 {
+        margin: 0;
+        color: white;
+        font-size: 22px;
+    }
+
+    .footer_text_div h3 {
+        margin-left: 0%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .footer_text2_div h3 {
+        padding-top: 20px;
+        margin-left: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .telecharger_appetee_flexbox {
+        height: auto;
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .telecharger_appetee_div_text {
+        margin: auto;
+        margin-top: 30px;
+        width: 60%;
+    }
+
+    .telecharger_appetee_div_text img {
+        margin: 5px;
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    .tel_app_img {
+        width: 250px;
+        transition: 1s;
+    }
+
+    .blank_div {
+        height: 0;
+        width: 0;
+    }
+
+    footer {
+        height: auto;
+    }
+
+}
+
+/*________________________________________________________________________________________*/
+
+@media screen and (max-width:880px) {
+
+    .nous_contacter {
+        display: block;
+    }
+
+    .nous_contacter_table_cell {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .nous_contacter_table_cell_2 {
+        display: block;
+        width: 100%;
+        height: 792px;
+    }
+
+    .div_formulaire {
+        margin-top: 60px;
+        width: 70%;
+    }
+
+    .nous_contacter_table_cell h2 {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .telecharger_appetee_div_text {
+        width: 80%;
+    }
+
+    .appli_input {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .appli_submit {
+        margin: 10px 0 50px 0;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+
+    .une_equipe_motivee .une_equipe_motivee_table, .une_equipe_motivee_table {
+        display: block;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_cell_img, .une_equipe_motivee .une_equipe_motivee_cell_img_2 {
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_cell_text {
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_cell_text_2 {
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-align: left;
+        order: 2;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_cell_text h3, .une_equipe_motivee_cell_text_2 h3 {
+        text-align: center;
+        font-size: 20px;
+        order: 1;
+    }
+
+    .une_equipe_motivee .flex_mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100% ;
+    }
+
+}
+
+/*________________________________________________________________________________________*/
+
+@media screen and (max-width:650px) {
+    .footer_div_infos {
+        height: 120px;
+    }
+
+    .footer_div_infos img {
+        width: 90px;
+    }
+}
+
+/*________________________________________________________________________________________*/
+
+@media screen and (max-width:500px) {
+
+    .div_formulaire {
+        width: 95%;
+    }
+
+    .telecharger_appetee_main_title h2 {
+        text-align: center;
+        margin: 0;
+        line-height: 140px;
+        font-size: 30px;
+    }
+
+    .une_equipe_motivee .une_equipe_motivee_titre h2 {
+        font-size: 30px;
+    }
+
+    .affichageTarifs article h2 {
+        font-size: 30px;
+    }
+
+    .tarifs h2 {
+        font-size: 30px;
+    }
+
+    .projet h2 {
+        font-size: 30px;
+    }
+
+    .projet article section h3 {
+        font-size: 24px;
+    }
+
+    .projet .projetContener h3 {
+        font-size: 28px;
+    }
+
+    .projet .projetContener div:nth-child(1) {
+        width: 90%;
+    }
+
+    .home article h1 {
+        font-size: 30px;
+    }
+
+    .concept h2 {
+        font-size: 30px;
+    }
+
+    .projet .projetContener h3, .projet .projetContener p {
+        margin: 20px auto 20px auto;
+    }
+    .nous_contacter_table_cell p {
+        font-size: 24px;
+    }
+    .button_chatbot {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .tarifs section article {
+        padding: 20px 0 0 0;
+    }
+}
+
+/*________________________________________________________________________________________*/
+@media screen and (max-width:400px) {
+    .telecharger_appetee_div_text {
+        min-width: auto;
+    }
+    .affichageTarifs article {
+        padding: 45px;
+    }
+}
+
+/*________________________________________________________________________________________*/
+@media screen and (max-width:320px) {
+    .footer_div_infos {
+        min-width: 260px;
+    }
+}
+
+/*________________________________________________________________________________________*/
+@media screen and (max-height:600px) and (min-width:800px) {
+    .home article:nth-child(2) img {
+        min-height: 600px;
+    }
+}
+
+/*________________________________________________________________________________________*/
+@media screen and (min-width:1500px) {
+    .une_equipe_motivee {
+        height: 1500px;
+    }
+}

@@ -1,0 +1,70 @@
+.conteneur_anim_1 { animation: img_1_animation infinite 13s; }
+.conteneur_anim_2 { animation: img_2_animation infinite 13s; }
+.conteneur_anim_3 { animation: img_3_animation infinite 13s; }
+
+@keyframes img_1_animation{
+    0%{transform: scale(1,1);}
+    3%{transform: scale(1.1,1.1);}
+    30%{transform: scale(1.1,1.1);}
+    33%{transform: scale(1,1);}
+}
+
+@keyframes img_2_animation{
+    33%{transform: scale(1,1);}
+    36%{transform: scale(1.1,1.1);}
+    63%{transform: scale(1.1,1.1);}
+    66%{transform: scale(1,1);}
+}
+
+@keyframes img_3_animation{
+    66%{transform: scale(1,1);}
+    69%{transform: scale(1.1,1.1);}
+    97%{transform: scale(1.1,1.1);}
+    100%{transform: scale(1,1);}
+}
+
+.anim_picto_1 { animation: picto_1_animation infinite 10s;}
+.anim_picto_2 { animation: picto_2_animation infinite 10s;}
+.anim_picto_3 { animation: picto_3_animation infinite 10s;}
+.anim_picto_4 { animation: picto_4_animation infinite 10s;}
+
+@keyframes picto_1_animation{
+    0%{transform: scale(1,1);}
+    5%{transform: scale(1.2,1.2);}
+    20%{transform: scale(1.2,1.2);}
+    25%{transform: scale(1,1);}
+}
+
+@keyframes picto_2_animation{
+    25%{transform: scale(1,1);}
+    30%{transform: scale(1.2,1.2);}
+    45%{transform: scale(1.2,1.2);}
+    50%{transform: scale(1,1);}
+}
+
+@keyframes picto_3_animation{
+    50%{transform: scale(1,1);}
+    55%{transform: scale(1.2,1.2);}
+    70%{transform: scale(1.2,1.2);}
+    75%{transform: scale(1,1);}
+}
+
+@keyframes picto_4_animation{
+    75%{transform: scale(1,1);}
+    80%{transform: scale(1.2,1.2);}
+    95%{transform: scale(1.2,1.2);}
+    100%{transform: scale(1,1);}
+}
+
+@media screen and (max-width: 810px) {
+    .conteneur_anim_1 { animation: none; }
+    .conteneur_anim_2 { animation: none; }
+    .conteneur_anim_3 { animation: none; }
+}
+
+@media screen and (max-width: 420px) {
+    .anim_picto_1 { animation: none; }
+    .anim_picto_2 { animation: none; }
+    .anim_picto_3 { animation: none; }
+    .anim_picto_4 { animation: none; }
+}

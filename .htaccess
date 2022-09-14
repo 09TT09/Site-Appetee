@@ -1,0 +1,38 @@
+<files .htaccess>
+  order allow,deny
+  deny from all
+</files>
+
+#protection de la lecture des répertoires
+Options -Indexes
+
+#ne pas mettre en cache si ces fichiers le sont déjà
+SetEnvIfNoCase Request_URI \.(?:jpg|png)$ no-gzip
+
+# BEGIN Expire headers
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault
+  ExpiresByType image/jpg "accès 1 semaine"
+  ExpiresByType image/png "accès 1 semaine"
+  ExpiresByType text/css "accès 1 semaine"
+  ExpiresByType text/javascript "accès 1 jour"
+  ExpiresByType text/html
+</IfModule>
+
+# BEGIN Cache-Control Headers
+<ifmodule mod_headers.c>
+
+<filesmatch ".(jpg|png|css)$">
+  Header set Cache-Control "max-age=604800"
+</filesmatch>
+
+<filesmatch "\.(js)$">
+  Header set Cache-Control "max-age=86400"
+</filesmatch>
+
+<filesmatch "\.(php)$">
+  Header set Cache-Control "max-age=0"
+</filesmatch>
+
+</ifmodule>
